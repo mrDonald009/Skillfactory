@@ -1,0 +1,26 @@
+Задание:
+
+Напишите запрос, 
+который выведет сумму выручки по месяцам:
+
+* date (месяц заказа) ― тип date;
+* revenue (объём выручки) ― округлите значения до целых с помощью round. 
+Отсортируйте запрос по дате заказа.
+
+SQL запрос:
+
+ with order_month as (
+ select
+    order_id,
+    date_trunc('month', order_date) date
+from sql.store_delivery)
+
+select
+    to_char(date, 'YYYY-MM-DD'),
+    round(sum((price * quantity) - ((price * quantity) * discount)))
+from 
+    sql.store_carts sc
+    join order_month om on sc.order_id = om.order_id
+    join sql.store_products sp on sc.product_id = sp.product_id
+group by 1 
+order by 1
