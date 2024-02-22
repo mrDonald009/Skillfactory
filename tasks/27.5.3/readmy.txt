@@ -1,0 +1,15 @@
+Задание:
+
+С динамикой и сезонностью разобрались — теперь посмотрим, что наши клиенты покупают больше всего.
+
+SQL запрос:
+
+select 
+    category,
+    subcategory,
+    round(sum(price * quantity * (1 - discount))) revenue
+from 
+    sql.store_carts sc
+    join sql.store_products sp on sc.product_id = sp.product_id
+group by 1,2
+order by 3 desc
