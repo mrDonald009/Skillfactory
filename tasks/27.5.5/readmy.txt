@@ -1,0 +1,19 @@
+Задание:
+
+Напишите запрос, который выведет сумму выручки по различным категориям и подкатегориям:
+* category (категория товара);
+* subcategory (подкатегория товара);
+* revenue (объём выручки) ― округлите до целых с помощью round.
+Отсортируйте запрос по убыванию выручки.
+
+SQL запрос:
+
+select 
+    category,
+    subcategory,
+    round(sum(price * quantity * (1 - discount))) revenue
+from 
+    sql.store_carts sc
+    join sql.store_products sp on sc.product_id = sp.product_id
+group by 1,2
+order by 3 desc
