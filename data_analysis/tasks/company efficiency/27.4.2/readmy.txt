@@ -1,0 +1,10 @@
+Задание:
+Сколько всего заказов было выполнено за это время?
+
+SQL запрос:
+
+select 
+    count(order_id)
+from 
+    sql.store_delivery
+

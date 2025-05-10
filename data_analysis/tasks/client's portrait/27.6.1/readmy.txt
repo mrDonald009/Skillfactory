@@ -1,0 +1,28 @@
+Задание:
+Напишите запрос, который выведет количество клиентов и выручку по категориям клиента:
+* category (категория клиента);
+* cust_cnt (количество клиентов);
+* revenue (объём выручки) ― округлите до целых с помощью round.
+Отсортируйте запрос по убыванию выручки.
+
+SQL запрос:
+
+with revenue_value as (
+select
+    cust_id,
+    sum((price * quantity) - ((price * quantity) * discount)) revenue
+from 
+    sql.store_carts sc
+    join sql.store_delivery sd on sc.order_id = sd.order_id
+    join sql.store_products sp on sc.product_id = sp.product_id
+group by 1)
+
+select
+    category,
+    count(sc.cust_id) cust_cnt,
+    round(sum(revenue)) revenue
+from
+    sql.store_customers sc
+    left join revenue_value rv on sc.cust_id = rv.cust_id
+group by 1
+order by 3 desc

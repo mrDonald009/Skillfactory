@@ -1,0 +1,73 @@
+Задача:
+Напишите запрос, который выведет:
+* тип доставки;
+* общее количество заказов (orders_cnt);
+* количество заказов, которые не были доставлены вовремя (late_orders_cnt);
+* долю выполненных вовремя заказов, в процентах (% success), округлённую до двух знаков после запятой.
+Отсортируйте запрос по четвёртому столбцу в порядке возрастания.
+
+SQL запрос:
+
+with over_sum_delivery as (
+select
+    sd.order_id,
+    count(quantity) orders_cnt
+from
+    sql.store_carts sc 
+    join sql.store_delivery sd on sc.order_id = sd.order_id
+group by 1)
+,
+late_orders as (
+select
+    order_id,
+    ship_mode,
+    case
+    when ship_mode =  'Standard Class' and (ship_date - order_date) <= 6 then 'On time'
+    when ship_mode = 'Second Class' and (ship_date - order_date) <= 4 then 'On time'
+    when ship_mode = 'First Class' and (ship_date - order_date) <= 3 then 'On time'
+    when ship_mode = 'Same Day' and (ship_date - order_date) = 0 then 'On time'
+    else 'Late' end Late_orders
+from
+    sql.store_delivery)
+,
+oc_loc_late as (
+select
+    ship_mode,
+    count(orders_cnt) orders_cnt
+from
+    over_sum_delivery osd
+    join late_orders lo on osd.order_id = lo.order_id
+where Late_orders = 'Late'
+group by 1
+)
+,
+oc_loc_over as (
+select
+    ship_mode,
+    count(orders_cnt) orders_cnt
+from
+    over_sum_delivery osd
+    join late_orders lo on osd.order_id = lo.order_id
+group by 1
+)
+,
+fraction as(
+select
+    ship_mode,
+    count(orders_cnt) orders_cnt
+from
+    over_sum_delivery osd
+    join late_orders lo on osd.order_id = lo.order_id
+where Late_orders = 'On time'
+group by 1)
+select
+    distinct olo.ship_mode,
+    olo.orders_cnt,
+    oll.orders_cnt late_orders_cnt,
+    round((f.orders_cnt::numeric/olo.orders_cnt)*100, 2) as"% success"
+from
+    late_orders lo 
+    join oc_loc_late oll on lo.ship_mode = oll.ship_mode
+    join oc_loc_over olo on lo.ship_mode = olo.ship_mode
+    join fraction f on lo.ship_mode = f.ship_mode
+order by 4

@@ -1,0 +1,3 @@
+company efficiency - определяю эффективность компании.
+client's portrait - составляю портрет клиента.
+delivery efficiency - анализирую логистику компании.
