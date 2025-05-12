@@ -8,8 +8,8 @@ def which_month(month):
 
 #Задание 28.5.13
 #Как необходимо модифицировать функцию print(), 
-age = input("Enter your age:")
-print("Age:", age)
+#   age = input("Enter your age:")
+#   print("Age:", age)
 #которая отображает возраст, чтобы вывод выглядел так:
 #Age: 25 years
 #Решение 28.5.13
