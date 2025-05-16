@@ -44,5 +44,5 @@ s4 = "ct"
 #   print(new_string)
 print(s1 + s3 + s4);
 #   #Perfect
-#Решение 28.8.1
+# Решение 28.8.1
 #answer - s1 + s3 + s4
