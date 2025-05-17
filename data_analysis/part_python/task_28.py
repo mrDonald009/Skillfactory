@@ -54,3 +54,19 @@ new_string = "Perfect"
 #Решение 28.8.2
 #answer - len(new_string)
 print(len(new_string));
+
+#Задание 28.8.3
+#Напишите индексы следующих символов в строке new_string = "Perfect":
+#Символ c
+#Символ t
+#Символ P
+#Символ r
+#Решение 28.8.3
+#answer - Символ c - 5
+#answer - Символ t - 6
+#answer - Символ P - 0
+#answer - Символ r - 2
+
+
+
+
