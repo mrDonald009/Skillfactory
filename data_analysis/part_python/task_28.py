@@ -42,7 +42,15 @@ s3 = "fe"
 s4 = "ct"
 #   new_string = ???
 #   print(new_string)
-print(s1 + s3 + s4);
 #   #Perfect
-# Решение 28.8.1
+#Решение 28.8.1
 #answer - s1 + s3 + s4
+print(s1 + s3 + s4);
+
+#Задание 28.8.2
+#Что должно стоять вместо знаков вопроса, чтобы print вывел длину строки new_string?
+new_string = "Perfect"
+#print(???)
+#Решение 28.8.2
+#answer - len(new_string)
+print(len(new_string));
