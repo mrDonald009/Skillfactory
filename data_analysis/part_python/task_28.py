@@ -107,3 +107,7 @@ print(numbers.replace(' ', '\n'));
 #Напишите программу, которая выводит на экран фразу в формате:
 #Hello, <name>! Today is <dayofweek>. Have a nice day!
 #где вместо <name> и <dayofweek> подставляются значения соответствующих переменных.
+#Решение 28.8.8
+name = 'John'
+dayofweek = 'Friday'
+print("Hello, {}! Today is {}. Have a nice day!".format(name, dayofweek));
