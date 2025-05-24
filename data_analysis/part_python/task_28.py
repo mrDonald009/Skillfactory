@@ -97,3 +97,17 @@ numbers = '1 2 3 4 5 6 7'
 #Решение 28.8.6
 print(numbers.replace(' ', '\n'));
 
+#Задание 28.8.8
+#Пусть информация о пользователе нашего фитнес-приложения содержится в следующих переменных:
+#name — имя пользователя;
+#dayofweek — название дня недели.
+#Пример таких переменных:
+#name = 'John'
+#dayofweek = 'Friday'
+#Напишите программу, которая выводит на экран фразу в формате:
+#Hello, <name>! Today is <dayofweek>. Have a nice day!
+#где вместо <name> и <dayofweek> подставляются значения соответствующих переменных.
+#Решение 28.8.8
+name = 'John'
+dayofweek = 'Friday'
+print("Hello, {}! Today is {}. Have a nice day!".format(name, dayofweek));
