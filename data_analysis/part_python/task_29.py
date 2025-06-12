@@ -66,7 +66,10 @@ print(a.split(' ')[-2:]);
 a = 'order1'
 b = 'order2'
 c = 'order3'
-orders = [a, b, c]
+orders = []
+orders.append(a)
+orders.append(b)
+orders.append(c)
 print(orders);
 #answer - ['order1', 'order2', 'order3']
 
@@ -76,6 +79,12 @@ print(orders);
 #Создайте список books, используя квадратные скобки. В нём уже должно лежать значение 'all_books'.
 #Последовательно положите две созданные переменные в список.
 #Выведите значение получившегося списка на экран. В качестве ответа запишите результат вывода.
+book1 = 'my book'
+book2 = 'your book'
+books = ['all_books']
+books.append(book1)
+books.append(book2)
+print(books);
 
 
 
