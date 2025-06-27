@@ -87,5 +87,14 @@ books.append(book2)
 print(books);
 #answer - ['all_books', 'my book', 'your book']
 
+#Задание 29.2.14
+#Создайте список letters из первых пяти букв английского алфавита. 
+#Выведите его. Затем примените к списку letters метод .clear(). 
+#Снова выведите результат. В качестве ответа запишите результат последнего вывода.
+letters = ['A', 'B', 'C', 'D', 'E']
+print (letters)
+letters.clear()
+print(letters);
+#answer - []
 
 
