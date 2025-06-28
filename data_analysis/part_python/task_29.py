@@ -107,3 +107,54 @@ print(letters);
 numbers = ['1', '5', '2', '3', '1', '5', '2', '3', '5', '2']
 print(numbers.count('5'));
 #answer - 3
+
+#Задание 29.2.16
+#Создайте список my_books из пяти элементов: 'book1', 'book2', 'book3', 'book4', 'book5'. 
+#Затем используйте функцию .copy() для копирования содержимого вашего списка в список tom_books. 
+#Выведите два полученных списка. В качестве ответа запишите результат вывода.
+my_books = ['book1', 'book2', 'book3', 'book4', 'book5']
+tom_books = my_books.copy()
+print(my_books, tom_books);
+#answer - ['book1', 'book2', 'book3', 'book4', 'book5'] ['book1', 'book2', 'book3', 'book4', 'book5']
+
+#Задание 29.2.17
+#Создайте список my_orders из пяти элементов: 'order1', 'order2', 'order3', 'order4', 'order5'. 
+#Затем используйте квадратные скобки и двоеточие внутри для копирования содержимого вашего списка в список anne_orders. 
+#Выведите два полученных списка. В качестве ответа запишите результат вывода.
+my_orders = ['order1', 'order2', 'order3', 'order4', 'order5']
+anne_orders = my_orders[:]
+print(my_orders, anne_orders);
+#answer - ['order1', 'order2', 'order3', 'order4', 'order5'] ['order1', 'order2', 'order3', 'order4', 'order5']
+
+#Задание 29.2.18
+#Создайте список all_things, в котором будет лежать три элемента: 'order1', 'order2', 'order3'.
+#Затем создайте список only_books, в котором будет лежать два элемента: 'book1', 'book2'.
+#Используя функцию .extend(), обогатите переменную all_things.
+all_things = ['order1', 'order2', 'order3']
+only_books = ['book1', 'book2']
+all_things.extend(only_books)
+print(all_things);
+#answer - ['order1', 'order2', 'order3', 'book1', 'book2']
+
+#Задание 29.2.19
+#Создайте список nums с числами от 1 до 10. Примените к нему функцию .reverse(). 
+#Выведите переменную nums. В качестве ответа введите результат вывода.
+nums = []
+num = 1
+for i in range(0, 10): 
+    nums.append(num)
+    num += 1
+nums.reverse()
+print(nums);
+#answer - [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+#Задание 29.2.20
+#Создайте список random_values = [3, 5, 0, -1, 2, 10, 15, -5]. 
+#Вызовите метод .sort() на этом списке. Выведите список random_values. 
+#В качестве ответа запишите результат вывода.
+random_values = [3, 5, 0, -1, 2, 10, 15, -5]
+random_values.sort()
+print(random_values);
+#answer - [-5, -1, 0, 2, 3, 5, 10, 15]
+
+
