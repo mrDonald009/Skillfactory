@@ -116,3 +116,10 @@ my_books = ['book1', 'book2', 'book3', 'book4', 'book5']
 tom_books = my_books.copy()
 print(my_books, tom_books);
 #answer - ['book1', 'book2', 'book3', 'book4', 'book5'] ['book1', 'book2', 'book3', 'book4', 'book5']
+
+#Задание 29.2.17
+#Создайте список my_orders из пяти элементов: 'order1', 'order2', 'order3', 'order4', 'order5'. 
+#Затем используйте квадратные скобки и двоеточие внутри для копирования содержимого вашего списка в список anne_orders. 
+#Выведите два полученных списка. В качестве ответа запишите результат вывода.
+
+
