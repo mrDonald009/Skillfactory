@@ -152,5 +152,9 @@ print(nums);
 #Создайте список random_values = [3, 5, 0, -1, 2, 10, 15, -5]. 
 #Вызовите метод .sort() на этом списке. Выведите список random_values. 
 #В качестве ответа запишите результат вывода.
+random_values = [3, 5, 0, -1, 2, 10, 15, -5]
+random_values.sort()
+print(random_values);
+#answer - [-5, -1, 0, 2, 3, 5, 10, 15]
 
 
