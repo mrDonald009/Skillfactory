@@ -136,3 +136,7 @@ all_things.extend(only_books)
 print(all_things);
 #answer - ['order1', 'order2', 'order3', 'book1', 'book2']
 
+#Задание 29.2.19
+#Создайте список nums с числами от 1 до 10. Примените к нему функцию .reverse(). 
+#Выведите переменную nums. В качестве ответа введите результат вывода.
+
