@@ -121,5 +121,8 @@ print(my_books, tom_books);
 #Создайте список my_orders из пяти элементов: 'order1', 'order2', 'order3', 'order4', 'order5'. 
 #Затем используйте квадратные скобки и двоеточие внутри для копирования содержимого вашего списка в список anne_orders. 
 #Выведите два полученных списка. В качестве ответа запишите результат вывода.
-
+my_orders = ['order1', 'order2', 'order3', 'order4', 'order5']
+anne_orders = my_orders[:]
+print(my_orders, anne_orders);
+#answer - ['order1', 'order2', 'order3', 'order4', 'order5'] ['order1', 'order2', 'order3', 'order4', 'order5']
 
