@@ -130,4 +130,9 @@ print(my_orders, anne_orders);
 #Создайте список all_things, в котором будет лежать три элемента: 'order1', 'order2', 'order3'.
 #Затем создайте список only_books, в котором будет лежать два элемента: 'book1', 'book2'.
 #Используя функцию .extend(), обогатите переменную all_things.
+all_things = ['order1', 'order2', 'order3']
+only_books = ['book1', 'book2']
+all_things.extend(only_books)
+print(all_things);
+#answer - ['order1', 'order2', 'order3', 'book1', 'book2']
 
