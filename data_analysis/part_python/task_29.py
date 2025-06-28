@@ -126,3 +126,8 @@ anne_orders = my_orders[:]
 print(my_orders, anne_orders);
 #answer - ['order1', 'order2', 'order3', 'order4', 'order5'] ['order1', 'order2', 'order3', 'order4', 'order5']
 
+#Задание 29.2.18
+#Создайте список all_things, в котором будет лежать три элемента: 'order1', 'order2', 'order3'.
+#Затем создайте список only_books, в котором будет лежать два элемента: 'book1', 'book2'.
+#Используя функцию .extend(), обогатите переменную all_things.
+
