@@ -112,3 +112,7 @@ print(numbers.count('5'));
 #Создайте список my_books из пяти элементов: 'book1', 'book2', 'book3', 'book4', 'book5'. 
 #Затем используйте функцию .copy() для копирования содержимого вашего списка в список tom_books. 
 #Выведите два полученных списка. В качестве ответа запишите результат вывода.
+my_books = ['book1', 'book2', 'book3', 'book4', 'book5']
+tom_books = my_books.copy()
+print(my_books, tom_books);
+#answer - ['book1', 'book2', 'book3', 'book4', 'book5'] ['book1', 'book2', 'book3', 'book4', 'book5']
