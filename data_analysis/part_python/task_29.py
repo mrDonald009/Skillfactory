@@ -139,11 +139,7 @@ print(all_things);
 #Задание 29.2.19
 #Создайте список nums с числами от 1 до 10. Примените к нему функцию .reverse(). 
 #Выведите переменную nums. В качестве ответа введите результат вывода.
-nums = []
-num = 1
-for i in range(0, 10): 
-    nums.append(num)
-    num += 1
+nums = list(range(1,11))
 nums.reverse()
 print(nums);
 #answer - [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
