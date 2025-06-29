@@ -161,4 +161,11 @@ print(random_values);
 #4.список [1,2,3,4];
 #5.строку 'bye'.
 #Выведите результат. В качестве ответа запишите результат вывода.
-
+list1 = []
+list1.append(5)
+list1.append(0.2)
+list1.append('hello there')
+list1.append([1,2,3,4])
+list1.append('bye')
+print(list1);
+#answer - [5, 0.2, 'hello there', [1, 2, 3, 4], 'bye']
