@@ -60,3 +60,8 @@ print(place_and_money);
 place_and_money = {1: 100, 2: 50, 3: 10}
 print(place_and_money.keys());
 #answer - dict_keys([1, 2, 3])
+
+#Задание 29.3.12
+#Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
+#Воспользуйтесь методом .keys() и выведите результат. В качестве ответа запишите результат вывода.
+
