@@ -45,3 +45,26 @@ place_and_money = {1: 100, 2: 50, 3: 10}
 place_and_money.update({3: 25})
 print(place_and_money);
 #answer - {1: 100, 2: 50, 3: 25}
+
+#Задание 29.3.10
+#Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. Очистите этот словарь. 
+#Выведите результат. В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+place_and_money.clear()
+print(place_and_money);
+#answer - {}
+
+#Задание 29.3.11
+#Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. 
+#Воспользуйтесь методом .keys() и выведите результат. В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+print(place_and_money.keys());
+#answer - dict_keys([1, 2, 3])
+
+#Задание 29.3.12
+#Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
+#Воспользуйтесь методом .keys() и выведите результат. В качестве ответа запишите результат вывода.
+name_to_age = dict()
+name_to_age.update({'Anne': 22, 'Anton': 27, 'Phillip': 30})
+print(name_to_age.keys());
+#answer - dict_keys(['Anne', 'Anton', 'Phillip'])
