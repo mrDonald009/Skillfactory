@@ -49,3 +49,7 @@ print(place_and_money);
 #Задание 29.3.10
 #Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. Очистите этот словарь. 
 #Выведите результат. В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+place_and_money.clear()
+print(place_and_money);
+#answer - {}
