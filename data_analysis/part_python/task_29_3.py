@@ -75,3 +75,7 @@ print(name_to_age.keys());
 name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
 print(name_to_age.values());
 #answer - dict_values([22, 27, 30])
+
+#Задание 29.3.14
+#Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. 
+#Воспользуйтесь методом .values() и выведите результат. В качестве ответа запишите результат вывода.
