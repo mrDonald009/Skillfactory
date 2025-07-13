@@ -68,3 +68,31 @@ name_to_age = dict()
 name_to_age.update({'Anne': 22, 'Anton': 27, 'Phillip': 30})
 print(name_to_age.keys());
 #answer - dict_keys(['Anne', 'Anton', 'Phillip'])
+
+#Задание 29.3.13
+#Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
+#Воспользуйтесь методом .values() и выведите результат. В качестве ответа запишите результат вывода.
+name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
+print(name_to_age.values());
+#answer - dict_values([22, 27, 30])
+
+#Задание 29.3.14
+#Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. 
+#Воспользуйтесь методом .values() и выведите результат. В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+print(place_and_money.values());
+#answer - dict_values([100, 50, 10])
+
+#Задание 29.3.15
+#Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. Попробуйте вывести приз для 20 места через метод .get(). 
+#В качестве значения по умолчанию поставьте число 0. В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+print(place_and_money.get(20, 0));
+#answer - 0
+
+#Задание 29.3.16
+#Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. Попробуйте вывести возраст для персонажа по имени 'Danny'. 
+#Если такого имени не будет в словаре, выведите -1. В качестве ответа запишите результат вывода.
+name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
+print(name_to_age.get('Danny', -1));
+#answer - -1
