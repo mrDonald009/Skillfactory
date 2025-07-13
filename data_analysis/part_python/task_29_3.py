@@ -68,3 +68,7 @@ name_to_age = dict()
 name_to_age.update({'Anne': 22, 'Anton': 27, 'Phillip': 30})
 print(name_to_age.keys());
 #answer - dict_keys(['Anne', 'Anton', 'Phillip'])
+
+#Задание 29.3.13
+#Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
+#Воспользуйтесь методом .values() и выведите результат. В качестве ответа запишите результат вывода.
