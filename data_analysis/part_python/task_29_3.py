@@ -79,3 +79,6 @@ print(name_to_age.values());
 #Задание 29.3.14
 #Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. 
 #Воспользуйтесь методом .values() и выведите результат. В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+print(place_and_money.values());
+#answer - dict_values([100, 50, 10])
