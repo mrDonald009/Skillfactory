@@ -110,3 +110,6 @@ print(place_and_money);
 #Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
 #Измените у Анны возраст на 23, а у Филиппа — на 29. 
 #Используйте метод update(). Выведите результат. В качестве ответа запишите результат вывода.
+name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
+name_to_age.update({'Anne': 23, 'Phillip': 29})
+print(name_to_age);
