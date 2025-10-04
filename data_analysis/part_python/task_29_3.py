@@ -121,3 +121,4 @@ print(name_to_age);
 place_and_money = {1: 100, 2: 50, 3: 10}
 result = place_and_money.pop(3)
 print(result);
+
