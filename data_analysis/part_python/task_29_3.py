@@ -122,3 +122,11 @@ place_and_money = {1: 100, 2: 50, 3: 10}
 result = place_and_money.pop(3)
 print(result);
 
+#Задание 29.3.20
+#Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
+#С помощью метода .pop() из словаря данные для Антона. 
+#Результат запишите в переменную result и выведите ее на экран. 
+#В качестве ответа запишите результат вывода.
+name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
+result = name_to_age.pop('Anton')
+print(result);
