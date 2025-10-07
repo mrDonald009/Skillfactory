@@ -130,3 +130,20 @@ print(result);
 name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
 result = name_to_age.pop('Anton')
 print(result);
+
+#Задание 29.3.21
+#Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. 
+#Через метод .setdefault() установите значение, равное 1, для десятого места. Выведите получившийся объект place_and_money. 
+#В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+place_and_money.setdefault(10, 1)
+print(place_and_money);
+
+#Задание 29.3.22
+#Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
+#Через метод .setdefault() обновите возраст у Анны с 22 до 32. Выведите результат — он не должен измениться. 
+#В качестве ответа запишите результат вывода.
+name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
+name_to_age.setdefault('Anne', 32)
+print(name_to_age);
+
