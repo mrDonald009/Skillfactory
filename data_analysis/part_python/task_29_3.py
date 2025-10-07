@@ -135,3 +135,7 @@ print(result);
 #Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. 
 #Через метод .setdefault() установите значение, равное 1, для десятого места. Выведите получившийся объект place_and_money. 
 #В качестве ответа запишите результат вывода.
+place_and_money = {1: 100, 2: 50, 3: 10}
+place_and_money.setdefault(10, 1)
+print(place_and_money);
+
