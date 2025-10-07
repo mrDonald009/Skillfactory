@@ -130,3 +130,8 @@ print(result);
 name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
 result = name_to_age.pop('Anton')
 print(result);
+
+#Задание 29.3.21
+#Создайте словарь place_and_money = {1: 100, 2: 50, 3: 10}. 
+#Через метод .setdefault() установите значение, равное 1, для десятого места. Выведите получившийся объект place_and_money. 
+#В качестве ответа запишите результат вывода.
