@@ -143,4 +143,7 @@ print(place_and_money);
 #Создайте словарь name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}. 
 #Через метод .setdefault() обновите возраст у Анны с 22 до 32. Выведите результат — он не должен измениться. 
 #В качестве ответа запишите результат вывода.
+name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
+name_to_age.setdefault('Anne', 32)
+print(name_to_age);
 
