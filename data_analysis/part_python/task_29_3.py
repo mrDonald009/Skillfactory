@@ -174,3 +174,4 @@ test_dict3 = {}
 test_dict3.update({'info': [10, 15, 27], 'about': {'game': 'football', 'period': 5}})
 test_dict3.update({'about': 'dont know'})
 print(test_dict3);
+
