@@ -147,3 +147,30 @@ name_to_age = {'Anne': 22, 'Anton': 27, 'Phillip': 30}
 name_to_age.setdefault('Anne', 32)
 print(name_to_age);
 
+#Задание 29.3.23
+#Создайте пустой словарь test_dict. Затем вставьте в него в качестве ключа число 5, а в качестве значения — список [3,4,5]. 
+#Затем в тот же словарь в качестве ключа добавьте кортеж (3,4,5), а его значением укажите строку 'strong man'. 
+#Выведите результат. В качестве ответа запишите результат вывода.
+test_dict = {}
+test_dict.update({5:[3,4,5]})
+test_dict.update({(3,4,5):'strong man'})
+print(test_dict);
+
+#Задание 29.3.24
+#Создайте пустой словарь test_dict2. 
+#По ключу 'name' поставьте строку 'Sancho'. 
+#В качестве значения для ключа 'surname' поставьте 'Panso'. А для ключа 'info' добавьте словарь {'age': 35, 'country': 'Mexico'}. 
+#Выведите результат. В качестве ответа запишите результат вывода.
+test_dict2 = {}
+test_dict2.update({'name': 'Sancho', 'surname': 'Panso', 'info': {'age': 35, 'country': 'Mexico'}})
+print(test_dict2);
+
+#Задание 29.3.25
+#Создайте пустой словарь test_dict3. 
+#По ключу 'info' добавьте список [10, 15, 27]. А ключу 'about' поставьте словарь {'game': 'football', 'period': 5}. 
+#Затем измените значение по ключу 'about' на 'dont know'. 
+#Выведите результат. В качестве ответа запишите результат вывода.
+test_dict3 = {}
+test_dict3.update({'info': [10, 15, 27], 'about': {'game': 'football', 'period': 5}})
+test_dict3.update({'about': 'dont know'})
+print(test_dict3);
