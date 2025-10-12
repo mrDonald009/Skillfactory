@@ -170,4 +170,7 @@ print(test_dict2);
 #По ключу 'info' добавьте список [10, 15, 27]. А ключу 'about' поставьте словарь {'game': 'football', 'period': 5}. 
 #Затем измените значение по ключу 'about' на 'dont know'. 
 #Выведите результат. В качестве ответа запишите результат вывода.
-
+test_dict3 = {}
+test_dict3.update({'info': [10, 15, 27], 'about': {'game': 'football', 'period': 5}})
+test_dict3.update({'about': 'dont know'})
+print(test_dict3);
