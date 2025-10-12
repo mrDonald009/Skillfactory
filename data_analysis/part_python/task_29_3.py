@@ -164,3 +164,10 @@ print(test_dict);
 test_dict2 = {}
 test_dict2.update({'name': 'Sancho', 'surname': 'Panso', 'info': {'age': 35, 'country': 'Mexico'}})
 print(test_dict2);
+
+#Задание 29.3.25
+#Создайте пустой словарь test_dict3. 
+#По ключу 'info' добавьте список [10, 15, 27]. А ключу 'about' поставьте словарь {'game': 'football', 'period': 5}. 
+#Затем измените значение по ключу 'about' на 'dont know'. 
+#Выведите результат. В качестве ответа запишите результат вывода.
+
