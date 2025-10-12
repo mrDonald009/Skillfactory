@@ -161,3 +161,6 @@ print(test_dict);
 #По ключу 'name' поставьте строку 'Sancho'. 
 #В качестве значения для ключа 'surname' поставьте 'Panso'. А для ключа 'info' добавьте словарь {'age': 35, 'country': 'Mexico'}. 
 #Выведите результат. В качестве ответа запишите результат вывода.
+test_dict2 = {}
+test_dict2.update({'name': 'Sancho', 'surname': 'Panso', 'info': {'age': 35, 'country': 'Mexico'}})
+print(test_dict2);
