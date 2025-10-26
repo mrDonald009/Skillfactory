@@ -90,3 +90,8 @@ print(num_set.union(date_num));
 #Затем создайте множество name из строки 'bad boy'. 
 #Примените метод .intersection() к созданным множествам. Выведите результат.
 #В качестве ответа запишите результат вывода.
+alpha_set = {'a', 'b', 'c', 'd', 'e'}
+name = set('bad boy')
+print(alpha_set.intersection(name));
+#Answer:
+#{'d', 'a', 'b'}
