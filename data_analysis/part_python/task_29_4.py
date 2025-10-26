@@ -100,4 +100,8 @@ print(alpha_set.intersection(name));
 #Создайте множество num_set из чисел от 0 до 10 (включительно). 
 #Затем создайте множество date_num из списка [1,9,4,8]. Примените метод .intersection() к созданным множествам. 
 #Выведите результат. В качестве ответа запишите результат вывода.
-
+num_set = set(range(0,11))
+date_num = set([1,9,4,8])
+print(num_set.intersection(date_num));
+#Answer:
+#{8, 1, 4, 9}
