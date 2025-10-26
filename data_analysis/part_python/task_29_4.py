@@ -111,3 +111,8 @@ print(num_set.intersection(date_num));
 #Затем создайте множество name из строки 'bad boy'. Примените метод .difference() к созданным множествам. 
 #В качестве базового множества используйте alpha_set. Выведите результат.
 #В качестве ответа запишите результат вывода.
+alpha_set = {'a', 'b', 'c', 'd', 'e'}
+name = set('bad boy')
+print(alpha_set.difference(name));
+#Answer:
+#{'c', 'e'}
